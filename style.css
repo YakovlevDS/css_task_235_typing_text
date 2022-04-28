@@ -1,0 +1,31 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(85, 0, 231);
+    background: linear-gradient(90deg, rgb(0, 231, 31) 0%, rgba(95, 11, 140, 1) 50%, rgb(30, 138, 181) 100%);
+}
+
+.typing-demo {
+    width: 35ch;
+    animation: typing 2.5s steps(35), blink .5s step-end infinite alternate;
+    color: rgb(238, 11, 11);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 6rem;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
